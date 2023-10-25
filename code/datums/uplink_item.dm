@@ -1774,12 +1774,13 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	cost = 5
 	surplus = 75
 
-/datum/uplink_item/device_tools/cipherkey
-	name = "Syndicate Encryption Key"
-	desc = "A key, that when inserted into a radio headset, allows you to listen to all station department channels as well as talk on an encrypted Syndicate channel."
+/datum/uplink_item/device_tools/bowman_kit
+	name = "Bowman Conversion kit + Syndicate Encryption Key"
+	desc = "Easy-to-apply device which enchances headset with loud noise protection and chameleoning headsets. \
+	A key, that when inserted into a radio headset, allows you to listen to all station department channels as well as talk on an encrypted Syndicate channel."
 	reference = "SEK"
-	item = /obj/item/encryptionkey/syndicate
-	cost = 2 //Nowhere near as useful as the Binary Key!
+	item = /obj/item/storage/box/syndie_kit/bowman_conversion_kit
+	cost = 1
 	surplus = 75
 
 /datum/uplink_item/device_tools/hacked_module
@@ -1962,6 +1963,13 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/storage/box/syndie_kit/mantisblade
 	cost = 12
 	surplus = 90
+
+/datum/uplink_item/implants/stealthbox
+    name = "Stealth Implant"
+    desc = "An implant injected into the body, and later activated manually to deploy a box, fully hiding you in the surroundings. Can be used indefinitely"
+    reference = "SB"
+    item = /obj/item/implanter/stealth
+    cost = 8
 
 // Cybernetics
 /datum/uplink_item/cyber_implants
